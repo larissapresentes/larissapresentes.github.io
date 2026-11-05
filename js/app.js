@@ -160,5 +160,15 @@
   nav.addEventListener("click", (e) => { if (e.target.closest("a")) toggle(false); });
   addEventListener("keydown", (e) => { if (e.key === "Escape") toggle(false); });
 
+  /* Aba ativa na barra inferior */
+  const tabs = document.querySelectorAll("#tabbar a");
+  const secs = [...tabs].map((a) => document.getElementById(a.dataset.sec));
+  const spy = () => {
+    let cur = 0;
+    secs.forEach((s, i) => { if (s && s.getBoundingClientRect().top < innerHeight * 0.4) cur = i; });
+    tabs.forEach((a, i) => { a.classList.toggle("active", i === cur); a.toggleAttribute("aria-current", i === cur); });
+  };
+  addEventListener("scroll", spy, { passive: true }); spy();
+
   render();
 })();
