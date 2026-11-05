@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Larissa Presentes | Presentes personalizados em Rondonópolis - MT</title>
+  <meta name="description" content="Larissa Presentes: copos, xícaras, lembrancinhas, embalagens e tags personalizadas em Rondonópolis - MT. Escolha no catálogo e peça pelo WhatsApp.">
+  <meta name="theme-color" content="#2B1B24">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="./">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Larissa Presentes">
+  <meta property="og:title" content="Larissa Presentes | Presentes personalizados">
+  <meta property="og:description" content="Copos, xícaras, lembrancinhas, embalagens e tags personalizadas. Peça pelo WhatsApp.">
+  <!-- Adicione og:image (img/og.jpg, 1200x630) quando houver foto autorizada -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script type="application/ld+json" id="jsonld"></script>
+</head>
+<body>
+  <a class="skip" href="#produtos">Ir para os produtos</a>
+
+  <header class="header" id="header">
+    <div class="wrap header__in">
+      <a href="#inicio" class="logo" aria-label="Larissa Presentes, início">Larissa <em>Presentes</em></a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#sobre">Sobre a loja</a>
+        <a href="#contato">Contato</a>
+        <a class="btn btn--wa nav__cta" data-wa href="#">Falar no WhatsApp</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero__in">
+        <div class="hero__text">
+          <p class="eyebrow">Rondonópolis · MT</p>
+          <h1>Presente bom é o que tem <em>o seu toque</em>.</h1>
+          <p class="lead">Copos, xícaras, lembrancinhas e embalagens personalizadas para aniversários, chás, batizados e todo dia que merece um mimo.</p>
+          <div class="hero__btns">
+            <a class="btn btn--dark" href="#produtos">Explorar produtos</a>
+            <a class="btn btn--wa" data-wa href="#">Atendimento no WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero__art" id="heroArt" aria-hidden="true">
+          <div class="hero__mono">LP</div>
+          <p>Foto da loja<br>em breve</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="categorias">
+      <div class="wrap">
+        <header class="sec-head"><p class="eyebrow">Categorias</p><h2>O que você encontra</h2></header>
+        <div class="cats" id="cats"></div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="destaques">
+      <div class="wrap">
+        <header class="sec-head"><p class="eyebrow">Seleção da casa</p><h2>Produtos em destaque</h2></header>
+        <div class="grid" id="featuredGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="produtos">
+      <div class="wrap">
+        <header class="sec-head"><p class="eyebrow">Catálogo</p><h2>Todos os produtos</h2></header>
+        <div class="tools">
+          <label class="search"><span class="sr">Buscar produto pelo nome</span>
+            <input type="search" id="search" placeholder="Buscar pelo nome, ex.: xícara" autocomplete="off">
+          </label>
+          <div class="chips" id="chips" role="group" aria-label="Filtrar por categoria"></div>
+        </div>
+        <p class="count" id="count" aria-live="polite"></p>
+        <div class="grid" id="grid"><p class="empty">Carregando produtos…</p></div>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="como-comprar">
+      <div class="wrap">
+        <header class="sec-head"><p class="eyebrow">Como comprar</p><h2>Do catálogo à sua mão</h2></header>
+        <ol class="steps">
+          <li><b>Explore</b><span>Navegue pelos produtos e categorias.</span></li>
+          <li><b>Escolha</b><span>Abra o produto para ver os detalhes.</span></li>
+          <li><b>Chame no WhatsApp</b><span>A mensagem já vai com o nome do produto.</span></li>
+          <li><b>Consulte</b><span>Disponibilidade, valores e condições.</span></li>
+          <li><b>Combine</b><span>Pagamento e entrega ou retirada.</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="sobre">
+      <div class="wrap about">
+        <div>
+          <p class="eyebrow">Sobre a loja</p>
+          <h2>Larissa Presentes</h2>
+        </div>
+        <div class="about__text">
+          <p>A Larissa Presentes é uma loja de presentes personalizados em Rondonópolis, Mato Grosso. Aqui você encontra copos, xícaras, lembrancinhas, caixinhas, tags e embalagens para montar um presente com a sua cara.</p>
+          <p>O atendimento é feito de forma próxima, pelo WhatsApp e pelo Instagram, para você tirar dúvidas sobre cada item e combinar os detalhes do seu pedido.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="testimonials" hidden>
+      <div class="wrap">
+        <header class="sec-head"><p class="eyebrow">Clientes</p><h2>Quem já presenteou</h2></header>
+        <div class="quotes" id="quotes"></div>
+      </div>
+    </section>
+
+    <section class="section" id="instagram">
+      <div class="wrap">
+        <header class="sec-head"><p class="eyebrow">Instagram</p><h2>@larissa.presentes_roo</h2></header>
+        <div class="insta" id="insta"></div>
+        <p class="insta__cta"><a class="btn btn--dark" id="instaBtn" target="_blank" rel="noopener" href="#">Ver novidades no Instagram</a></p>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="contato">
+      <div class="wrap">
+        <header class="sec-head"><p class="eyebrow">Contato</p><h2>Informações da loja</h2></header>
+        <dl class="info" id="info"></dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__in">
+      <div>
+        <a href="#inicio" class="logo logo--light">Larissa <em>Presentes</em></a>
+        <p>Presentes personalizados em Rondonópolis - MT.</p>
+      </div>
+      <nav aria-label="Rodapé">
+        <a href="#produtos">Produtos</a><a href="#categorias">Categorias</a><a href="#sobre">Sobre a loja</a><a href="#contato">Contato</a>
+      </nav>
+      <div id="footContact"></div>
+    </div>
+    <p class="wrap copy">© <span id="year"></span> Larissa Presentes. Todos os direitos reservados.</p>
+  </footer>
+
+  <a class="fab" data-wa href="#" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 .2 11.9c0 2.1.6 4.1 1.6 5.9L.1 24l6.4-1.7a11.9 11.9 0 0 0 5.6 1.4h.01A11.9 11.9 0 0 0 20.5 3.5zM12.1 21.7a9.9 9.9 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4a9.9 9.9 0 1 1 8.4 4.7zm5.4-7.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.700 3.700 0 0 0-1.1 2.700c0 1.600 1.200 3.200 1.300 3.400s2.300 3.500 5.600 4.900c2 .9 2.800.9 3.800.8.600-.1 1.800-.7 2-1.400s.3-1.300.2-1.400-.3-.2-.6-.3z"/></svg>
+  </a>
+
+  <dialog class="modal" id="modal" aria-labelledby="mTitle">
+    <button class="modal__x" id="mClose" aria-label="Fechar">×</button>
+    <div class="modal__in" id="mBody"></div>
+  </dialog>
+
+  <script src="js/config.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
